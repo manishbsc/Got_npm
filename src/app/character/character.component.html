@@ -1,0 +1,23 @@
+
+<div class="container" style="text-align:center">
+    <div class="row" style="text-align:center">
+      <div class="col-sm-12" style="font-size:2rem">Character</div>
+      <br><br><br><br><br>
+    </div>
+    <div class="row" style="text-align:center" *ngIf="characters.length>0">
+      <!--allblogs from homecomponent-->
+    <div *ngFor="let char of characters" class="col-sm-6 col-md-4">
+    <div class="card mb-3">
+    <img class="card-img-top" src="./assets/got.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">{{char.name || "A-name"}}</h5>
+      <p class="card-text">aliases-{{char.aliases[0]  || "Unknown"}}</p>
+      <p class="card-text">Gender-{{char.gender  || "Unknown"}}.</p>
+      <a [routerLink]="['/view',char.url]"class="btn btn-primary">Details</a>
+    </div>
+    </div>
+    </div>
+  </div>
+  </div>
+  
+

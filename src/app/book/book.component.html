@@ -1,0 +1,24 @@
+
+
+<div class="container" style="text-align:center">
+        <div class="row" style="text-align:center">
+          <div class="col-sm-12" style="font-size:2rem">Books</div>
+          <br><br><br><br><br>
+        </div>
+        <div class="row" style="text-align:center;" *ngIf="books.length>0">
+            <!--allblogs from homecomponent-->
+        <div *ngFor="let char of books" class="col-sm-6 col-md-4">
+        <div class="card mb-3">
+        <img class="card-img-top" src="./assets/books.jpeg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">{{char.name || "A-name"}}</h5>
+          <p class="card-text">Isbn-{{char.isbn || "Unknown"}}.</p>
+          <p class="card-text">Authors-{{char.authors || "Unknown"}}.</p>
+          <a  class="btn btn-primary" [routerLink]="['/view',char.url]">Details</a>
+        </div>
+        </div>
+        </div>
+      </div>
+      </div>
+
+

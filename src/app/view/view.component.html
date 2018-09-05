@@ -1,0 +1,154 @@
+<div class="container">
+    <div *ngIf="current.isbn">
+    <br>
+        <h3 style="text-align:center"><b>BOOK DETAIL</b></h3>
+        <br>
+     <div class="row" style="text-align:center">
+     <div class="col" style="text-align:center">
+    <img src="./assets/books.jpeg" class="img-fluid" alt="Responsive image" style="width: 50vw">
+    </div>
+    </div>
+    <br>
+    <div class="row" style="text-align:center;margin: 4%">
+    <label style="font-size:120%">Url</label>
+    <input class="form-control" type="text" placeholder="Info not available" value={{current.url}}>
+    <label style="font-size:120%">Name</label>
+    <input class="form-control" type="text" placeholder="Info not available" value={{current.name}}>
+    <label style="font-size:120%">Isbn</label>
+    <input class="form-control" type="text" placeholder="Info not available" value={{current.isbn}}>
+    <label style="font-size:120%">Author</label>
+    <input class="form-control" type="text" placeholder="Info not available" value={{current.authors}}>
+    <label style="font-size:120%">No of pages</label>
+    <input class="form-control" type="text" placeholder="Info not available" value={{current.numberOfPages}}>
+    <label style="font-size:120%">publisher</label>
+    <input class="form-control" type="text" placeholder="Info not available" value={{current.publisher}}>
+    <label style="font-size:120%">country</label>
+    <input class="form-control" type="text" placeholder="Info not available" value={{current.country}}>
+    <label style="font-size:120%">mediaType</label>
+    <input class="form-control" type="text" placeholder="Info not available" value={{current.mediaType}}>  
+    <label style="font-size:120%">released</label>
+    <input class="form-control" type="text" placeholder="Info not available" value={{current.released}}>
+    <label style="font-size:120%">characters</label>
+    <input class="form-control" type="text" placeholder="Info not available" value={{current.characters}}>
+    <label style="font-size:120%">povCharacters</label>
+    <input class="form-control" type="text" placeholder="Info not available" value={{current.povCharacters}}>
+    <br>  
+</div>
+<div class="row">
+        <div class="col-sm-6">
+    <a class="btn btn-primary" (click)="goBackToPreviousPage()" style="margin: 8%">Go Back </a>
+     </div>
+    <div class="col-sm-6">
+    <a class="btn btn-warning  btn-lg" [routerLink]="['/home']" style="margin: 8%">Home </a>
+    </div>  
+    </div>
+</div>
+<div *ngIf="current.gender">
+        <br>
+            <h3 style="text-align:center"><b>Character DETAIL</b></h3>
+            <br>
+         <div class="row" style="text-align:center">
+         <div class="col" style="text-align:center">
+        <img src="./assets/got.jpg" class="img-fluid" alt="Responsive image" style="width: 50vw">
+        </div>
+        </div>
+        <br>
+        <div class="row" style="text-align:center">
+        <label style="font-size:120%">Url</label>
+        <input class="form-control" type="text" placeholder="Info not available" value={{current.url}}>
+        <label style="font-size:120%">Name</label>
+        <input class="form-control" type="text" placeholder="Info not available" value={{current.name}}>
+        <label style="font-size:120%">Gender</label>
+        <input class="form-control" type="text" placeholder="Info not available" value={{current.gender}}>
+        <label style="font-size:120%">Culture</label>
+        <input class="form-control" type="text" placeholder="Info not available" value={{current.culture}}>
+        <label style="font-size:120%">Born</label>
+        <input class="form-control" type="text" placeholder="Info not available" value={{current.born}}>
+        <label style="font-size:120%">Died</label>
+        <input class="form-control" type="text" placeholder="Info not available" value={{current.died}}>
+        <label style="font-size:120%">Title</label>
+        <input class="form-control" type="text" placeholder="Info not available" value={{current.titles}}>
+        <label style="font-size:120%">Aliases</label>
+        <input class="form-control" type="text" placeholder="Info not available" value={{current.aliases}}>  
+        <label style="font-size:120%">Father</label>
+        <input class="form-control" type="text" placeholder="Info not available" value={{current.father}}>
+        <label style="font-size:120%">Spouse</label>
+        <input class="form-control" type="text" placeholder="Info not available" value={{current.spouse}}>
+        <label style="font-size:120%">Mother</label>
+        <input class="form-control" type="text" placeholder="Info not available" value={{current.mother}}>
+        <label style="font-size:120%">allegiances</label>
+        <input class="form-control" type="text" placeholder="Info not available" value={{current.allegiances}}>
+        <label style="font-size:120%">Books</label>
+        <input class="form-control" type="text" placeholder="Info not available" value={{current.books}}>
+        <label style="font-size:120%">tv series</label>
+        <input class="form-control" type="text" placeholder="Info not available" value={{current.tvSeries}}>
+        <label style="font-size:120%">povBooks</label>
+        <input class="form-control" type="text" placeholder="Info not available" value={{current.povBooks}}>
+        <label style="font-size:120%">Playedby</label>
+        <input class="form-control" type="text" placeholder="Info not available" value={{current.playedBy}}>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+    <a class="btn btn-primary" (click)="goBackToPreviousPage()" style="margin: 8%">Go Back </a>
+     </div>
+    <div class="col-sm-6">
+    <a class="btn btn-warning  btn-lg" [routerLink]="['/home']" style="margin: 8%">Home </a>
+    </div>  
+    </div>
+    </div>
+<div *ngIf="current.region">
+        <br>
+            <h3 style="text-align:center"><b>Houses</b></h3>
+            <br>
+         <div class="row" style="text-align:center">
+         <div class="col" style="text-align:center">
+        <img src="./assets/houses.jpeg" class="img-fluid" alt="Responsive image" style="width: 50vw">
+        </div>
+        </div>
+        <br>
+        <div class="row" style="text-align:center">
+        <label style="font-size:120%">Url</label>
+        <input class="form-control" type="text" placeholder="Info not available" value={{current.url}}>
+        <label style="font-size:120%">Name</label>
+        <input class="form-control" type="text" placeholder="Info not available" value={{current.name}}>
+        <label style="font-size:120%">Region</label>
+        <input class="form-control" type="text" placeholder="Info not available" value={{current.region}}>
+        <label style="font-size:120%">CoatofArms</label>
+        <input class="form-control" type="text" placeholder="Info not available" value={{current.coatOfArms}}>
+        <label style="font-size:120%">Words</label>
+        <input class="form-control" type="text" placeholder="Info not available" value={{current.words}}>
+        <label style="font-size:120%">Titles</label>
+        <input class="form-control" type="text" placeholder="Info not available" value={{current.titles}}>
+        <label style="font-size:120%">Seats</label>
+        <input class="form-control" type="text" placeholder="Info not available" value={{current.seats}}>
+        <label style="font-size:120%">Currentlord</label>
+        <input class="form-control" type="text" placeholder="Info not available" value={{current.currentLord}}>  
+        <label style="font-size:120%">Heir</label>
+        <input class="form-control" type="text" placeholder="Info not available" value={{current.heir}}>
+        <label style="font-size:120%">Overlord</label>
+        <input class="form-control" type="text" placeholder="Info not available" value={{current.overlord}}>
+        <label style="font-size:120%">Founded</label>
+        <input class="form-control" type="text" placeholder="Info not available" value={{current.founded}}>
+        <label style="font-size:120%">Founder</label>
+        <input class="form-control" type="text" placeholder="Info not available" value={{current.founder}}>
+        <label style="font-size:120%">Diedout</label>
+        <input class="form-control" type="text" placeholder="Info not available" value={{current.diedOut}}>
+        <label style="font-size:120%">Ancestral Weapons</label>
+        <input class="form-control" type="text" placeholder="Info not available" value={{current.ancestralWeapons}}>
+        <label style="font-size:120%">CadetBranches</label>
+        <input class="form-control" type="text" placeholder="Info not available" value={{current.cadetBranches}}>
+        <label style="font-size:120%">Sworn Members</label>
+        <input class="form-control" type="text" placeholder="Info not available" value={{current.swornMembers}}>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+    <a class="btn btn-primary" (click)="goBackToPreviousPage()" style="margin: 8%">Go Back </a>
+     </div>
+    <div class="col-sm-6">
+    <a class="btn btn-warning  btn-lg" [routerLink]="['/home']" style="margin: 8%">Home </a>
+    </div>  
+    </div>
+    </div>
+</div>
+
+  

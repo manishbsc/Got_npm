@@ -1,0 +1,12 @@
+.header{
+    color: black;
+    display: block;
+    background-color: #EAD912;
+    text-align: center;
+    font-size: 5vw;
+    height: 12vw;    
+}  
+ 
+.navbar{
+    background-color: #4E4E48;
+}

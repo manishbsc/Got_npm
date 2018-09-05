@@ -1,0 +1,23 @@
+
+<div class="container" style="text-align:center">
+    <div class="row" style="text-align:center">
+      <div class="col-sm-12" style="font-size:2rem">Houses</div>
+      <br><br><br><br><br>
+    </div>
+    <div class="row" style="text-align:center" *ngIf="houses.length>0">
+      <!--allblogs from homecomponent-->
+    <div *ngFor="let char of houses" class="col-sm-6 col-md-4">
+    <div class="card mb-3">
+    <img class="card-img-top" src="./assets/houses.jpeg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">{{char.name || "No-name"}}</h5>
+      <p class="card-text">Coat of arms-{{char.coatOfArms|| "Unknown"}}</p>
+      <p class="card-text">Region-{{char.region}}.</p>
+      <a  [routerLink]="['/view',char.url]" class="btn btn-primary">Details</a>
+    </div>
+    </div>
+    </div>
+  </div>
+  </div>
+
+
